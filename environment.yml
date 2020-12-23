@@ -7,7 +7,7 @@ dependencies:
   - python=3.7
   - pip
   - cpuonly
-  - pytorch=1.7
+  - pytorch=1.7.0
   - notebook
   - voila=0.2
   - pip:
