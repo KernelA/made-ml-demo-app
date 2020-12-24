@@ -12,6 +12,7 @@ dependencies:
   - networkx
   - pyglet
   - ipywidgets
+  - voila-material
   - pip:
     - torch-geometric
     - gdown
