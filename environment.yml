@@ -13,6 +13,7 @@ dependencies:
   - pyglet
   - ipywidgets
   - shapely
+  - tornado=6.1
   - pip:
     - torch-geometric
     - gdown
