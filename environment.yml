@@ -2,18 +2,21 @@ name: pytorch-demo-app
 channels:
   - defaults
   - conda-forge
+  - plotly
 dependencies:
   - python=3.7
   - pip
-  - notebook
+  - notebook>=5.3
   - voila=0.2
   - scikit-learn=0.23.2
   - trimesh=3.8.1
   - networkx
   - pyglet
-  - ipywidgets
+  - ipywidgets>=7.2
   - shapely
   - tornado=6.1
+  - umap-learn=0.4
+  - plotly=4.14.1
   - pip:
     - torch-geometric
     - gdown
