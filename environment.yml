@@ -12,6 +12,7 @@ dependencies:
   - networkx
   - pyglet
   - ipywidgets
+  - shapely
   - pip:
     - torch-geometric
     - gdown
