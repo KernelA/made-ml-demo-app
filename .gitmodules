@@ -1,4 +1,4 @@
 [submodule "made-ml-demo-app-model"]
 	path = made-ml-demo-app-model
 	url = https://github.com/KernelA/made-ml-demo-app-model.git
-	branch = master
+	branch = feature/pytorch-lighting
