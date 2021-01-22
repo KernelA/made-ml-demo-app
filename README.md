@@ -1,51 +1,51 @@
-# Демонстрация классификации примитивов с помощью PyTorch Geometric
+# 3D classification primitive with PyTorch Geometric
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/KernelA/made-ml-demo-app.git/master?urlpath=%2Fvoila%2Frender%2Fdemo.ipynb)
 
-## Описание
+## Description
 
-Проект демонстрирует возможность применения [PyTorch Geometric](https://github.com/rusty1s/pytorch_geometric), а также других технологий для создания простого демо с классификаций 3D примитивов.
+This project demonstrates application of [PyTorch Geometric](https://github.com/rusty1s/pytorch_geometric) and other technologies for creating a simple demo app.
 
-Оригинальный репозиторий с обучением модели [находится здесь](https://github.com/KernelA/made-ml-demo-app-model)
+[Repository with model here](https://github.com/KernelA/made-ml-demo-app-model)
 
-Используемые технологии:
-* [Voila для создания web-приложения](https://github.com/voila-dashboards/voila)
-* [Jupyter Widgets для создания основного интерфейса](https://jupyter.org/widgets)
-* [BinderHub для запуска примера](https://github.com/jupyterhub/binderhub)
+Used technologies:
+* [Voila for creating web-application](https://github.com/voila-dashboards/voila)
+* [Jupyter Widgets for GUI](https://jupyter.org/widgets)
+* [BinderHub for running](https://github.com/jupyterhub/binderhub)
 
-Также используется репозиторий [с примером замены внешнего вида интерфейса Voila](https://github.com/voila-dashboards/voila-material)
+Voila theme used [from other repository](https://github.com/voila-dashboards/voila-material)
 
-## Требования для запуска
+## Requirements
 
-1. Python 3.7 или выше.
-2. Anaconda
-3. Git LFS (все данные для модели хранятся в LFS)
+1. Python 3.7 or higher.
+2. Anaconda or Miniconda.
+3. Git LFS (weights for model is storing in LFS).
 
-## Как запустить
+## How to tun
 
-Создать окружение:
+Create anaconda environment:
 ```
 conda env create -n 3d-cls-demo --file ./environment.yml
 conda activate 3d-cls-demo
 ```
 
-Для запуска приложения в Voila:
+For running in Voila:
 ```
 python ./setup.py develop
 ```
 
-Файлы со из директории `share` должны попасть в нужную директорию, иначе будет ошибка при запуске Voila. Для Anaconda:
+Files from directory `share` must be in right place, otherwise will be error when Voila starting. For Anaconda:
 ```
 jupyter --paths
 ```
 
-Возможный вывод под Windows:
+Possible output for Windows:
 ```
 data:
     D:\...\3d-cls-demo\share\jupyter
 ```
 
-Структура директорий в ` D:\...\3d-cls-demo\share\jupyter` должны быть такая:
+Directory structure in ` D:\...\3d-cls-demo\share\jupyter` must be:
 ```
 ├───nbconvert
 │   └───templates
@@ -78,9 +78,9 @@ data:
             └───templates
 ```
 
-Обратите внимание на название `material`. Это директория, которая содержит нужные файлы с настройками внешнего вида. Соотв. директорий в репозитории и в окружении не однозначное, поэтому нужные директории необходимо скопировать самостоятельно. С работой `setup.py` под Windows и Anaconda были проблемы.
+Note `material` name. This is directory with settings of theme for Voila application. Corresponding directories must be copy manually. Some problems were with `setup.py` under Windows.
 
-После этого необходимо выполнить команду:
+After you need to invoke command:
 ```
 voila ./demo.ipynb --template material
 ```
