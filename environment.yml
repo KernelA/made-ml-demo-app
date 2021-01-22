@@ -18,8 +18,7 @@ dependencies:
   - umap-learn=0.4
   - plotly=4.14.1
   - pip:
-    - torch-geometric
-    - gdown
+    - torch-geometric~=1.6
     - pytransform3d
     - --find-links https://download.pytorch.org/whl/torch_stable.html
     - torch==1.7.0+cpu
