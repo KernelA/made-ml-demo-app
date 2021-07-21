@@ -15,7 +15,7 @@ dependencies:
   - ipywidgets>=7.2
   - shapely
   - tornado=6.1
-  - umap-learn=0.4
+  - umap-learn=0.5
   - plotly=4.14.1
   - pip:
     - torch-geometric~=1.6
